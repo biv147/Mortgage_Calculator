@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B6A23"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="43dp"
+        android:text="Mortgage Calculator"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtPrin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"
+        android:ems="10"
+        android:hint="Principal Amount"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Interest"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_below="@+id/txtInterest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Period (In Years)"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="#5EBF4C"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Monthly Payment:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="00.00"
+        android:textSize="24sp" />
+
+</RelativeLayout>
